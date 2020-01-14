@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./login_page.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header"></div>
+      <div class="body">
+        <div class="form_div">
+          <div class="heading"><span>Enter Ad Details </span></div>
+          <br />
+          <p>Select Category:</p>
+          <select name="Mobiles" id="category">
+            <option value="Mobiles">Mobiles</option>
+            <option value="Cars">Cars</option>
+            <option value="Houses">Houses</option>
+            <option value="Cameras">Cameras</option>
+          </select>
+          <br />
+          <p>Enter Your Location:</p>
+          <select name="Karachi" id="location">
+            <option value="Karachi">Karachi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Multan">Multan</option>
+          </select>
+          <br />
+          <p>Brand Name:</p>
+          <input id="name" type="text" placeholder="Enter brand name" /> <br />
+
+          <p>Contact Number:</p>
+          <input id="contact" type="text" placeholder="Enter contact number" />
+          <br />
+
+          <p>Description of Your Ad:</p>
+          <input
+            id="description"
+            type="text"
+            placeholder="Enter Description..."
+          />
+          <br />
+
+          <p>Enter Price</p>
+          <input id="price" type="text" placeholder="Enter Amount in PKR" />
+          <br />
+
+          <p>Add Photo:</p>
+          <input id="photos" type="file" /> <br />
+          <br />
+          <button onclick="saveData()">POST AD</button>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAUEPSrfTKzCaA_XVl54fk0no3oJoAH934",
+      authDomain: "signinauthentication-726ba.firebaseapp.com",
+      databaseURL: "https://signinauthentication-726ba.firebaseio.com",
+      projectId: "signinauthentication-726ba",
+      storageBucket: "signinauthentication-726ba.appspot.com",
+      messagingSenderId: "615877315331",
+      appId: "1:615877315331:web:6424b466d70cf434e97736"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="ad_form.js"></script>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+   <div class="main">
+<div class="header"></div>
+<div class="body">
+   
+           <div class="form_div">
+               <p>Post Your Ad</p>
+               <p>Select Category:</p>
+               <select name="Mobiles" id="category">
+                   <option value="Mobiles">Mobiles</option>
+                   <option value="Cars">Cars</option>
+                   <option value="Houses">Houses</option>
+                   <option value="Cameras">Cameras</option>
+               </select>
+               <p>Enter Your Location:</p>
+               <select name="Karachi" id="location">
+                   <option value="Karachi">Karachi</option>
+                   <option value="Lahore">Lahore</option>
+                   <option value="Islamabad">Islamabad</option>
+                   <option value="Multan">Multan</option>
+
+               </select>
+               <p>Brand Name:</p>
+               <input id="name" type="text" placeholder="Enter brand name">
+
+               <p>Contact Number:</p>
+               <input id="contact" type="text" placeholder="Enter brand name">
+
+               <p>Description of Your Ad:</p>
+               <input id="description" type="text" placeholder="Enter Description...">  
+               
+               <p>Enter Price</p>
+               <input id="price" type="number" placeholder="Enter Amount in PKR">
+
+               <p>Add Photos of your ad</p>
+               <input id="photos" type="image">
+                <br>
+               <button onclick="showData()">POST AD</button>
+           </div>
+</div>
+<div class="footer"></div>
+   </div>
+</body>
+<script src="/ad_form.js" ></script>
+</html> -->

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./chat.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body onload="loadChat()">
+ <div class="main" >
+        <div class="header" ></div>
+       
+        <div class="body" >
+            <div class="left-body" >
+                <div class="collection" ></div>
+                <div class="collection" ></div>
+            </div>
+            <div class="right-body " >
+                <div id="chatArea">
+
+                </div>
+                <!-- <div class="rcvMsg" >
+                    <p class="rcvMsgBox" >hellooaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                </div>
+                <div class="sentMsg" >
+                    <p class="sentMsgBox" >Hiiiiiii</p>
+                </div> -->
+                    <div class="text_box" >
+                            <input id="textBox" type="text" placeholder="Type a message...">
+                            <button class="btn btn-primary" id="btn" onclick="sentMsg()"> Send</button>
+                    </div>
+            </div>
+
+        </div>
+        <div class="footer" >
+                
+        </div>
+ </div>
+ 
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAUEPSrfTKzCaA_XVl54fk0no3oJoAH934",
+      authDomain: "signinauthentication-726ba.firebaseapp.com",
+      databaseURL: "https://signinauthentication-726ba.firebaseio.com",
+      projectId: "signinauthentication-726ba",
+      storageBucket: "signinauthentication-726ba.appspot.com",
+      messagingSenderId: "615877315331",
+      appId: "1:615877315331:web:6424b466d70cf434e97736"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="index.js" ></script>
+
+
+</html>

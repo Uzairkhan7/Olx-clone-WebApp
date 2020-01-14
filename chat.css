@@ -1,0 +1,107 @@
+body{
+    margin: 0px !important;
+}
+.main{
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+/* .header{
+    background-color: indigo;
+    flex: 1;
+} */
+.body{
+    /* background-color: rgb(255, 255, 255); */
+    flex: 8;
+
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+    
+}
+.right-body{
+    flex: 8;
+    background-color: #e6e6e6;
+    position: relative;
+
+
+}
+.left-body{
+    flex: 4;
+    background-color: #008ce9;
+
+}
+.msgs{
+    /* height: 50%; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.msgs div{
+padding: 5%;
+border: 2px solid black;
+height: 100%;
+width: 30%;
+}
+
+.text_box{
+position: absolute;
+bottom: 0;
+margin-left: 10px;
+margin-bottom: 10px;
+width: 90%;
+}
+
+.text_box input{
+    /* width: 900px; */
+    width: 90%;
+    height: 50px;
+    padding: 5px;
+}
+
+#btn{
+    height: 45px;
+    margin-bottom: 5px;
+}
+
+.collection{
+    width: 97%;
+    height: 100px;
+    background-color: #f7f7f7;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.rcvMsg{
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.rcvMsgBox{
+    padding: 10px;
+    border-radius: 20px 20px 20px 0px;
+    background-color: rgb(158, 156, 156);
+    font-weight: 600;
+}
+
+.sentMsg{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.sentMsgBox{
+    padding: 10px;
+    /* position: relative; */
+    border-radius: 20px 20px 0px 20px;
+    /* display: flex;
+    justify-content: flex-end; */
+    background-color: rgb(46, 102, 255);
+    font-weight: 600;
+    
+}
+

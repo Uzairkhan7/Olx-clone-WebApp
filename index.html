@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="main" >
+    <div class="header" >
+      <div class="logo_div" ><img src="./Images/logo.png" alt=""></div>
+      <div class="left_header" >
+        <select class="dropdown" name="" id="">
+          <option value="">Pakistan</option>
+          <option value="">Lahore</option>
+          <option value="">Islamabad</option>
+          <option value="">Karachi</option>
+      </select>
+      </div>
+      <div class="mid_header" >
+        <input  type="text" class="search_box" placeholder="Find Cars, Mobile Phones & more">
+      </div>
+      <div class="right_header" >
+          <a href="login_page.html"><button class="login_button"> LOGIN</button></a>
+          <a href="ad_form.html"><button class="sell_button">SALE</button></a>
+          
+      </div>
+    </div>
+    <div class="body" >
+      <div class="upper_body"><div class="banner_img"><img src="./Images/Capture.JPG" alt=""></div></div>
+      <div class="lower_body">
+
+        <div class="row1" id="row1">
+
+         <!-- <div class="ad_box">
+           
+            <div class="img">
+              <img src="./Images/img.JPG">
+            </div>
+
+              <div class="text">
+                <b>Rs 43,000  </b>
+                <p> Oneplus 7 pro </p>
+                
+                <div class="chatIcon">
+                    <i class='far fa-comment-alt' id="adID"  ></i>
+                </div>
+
+                <div class="location">
+                  <section class="loc">Malir</section>
+                  <section class="loc">Nov 18</section>
+                  
+                </div>
+              </div>
+        </div> -->
+
+          
+
+      </div>
+       
+      </div>
+    </div>
+    <div class="footer" >
+      <div class="upper_footer">
+         <div class="upper_footer_left"><img src="./Images/phone-app.olx.4cb8cbc4.png" alt=""></div>
+         <div class="upper_footer_mid"><p>TRY THE OLX APP</p> <Span>Buy, sell and find just about anything using the app on your mobile</Span> </div>
+         <div class="line_div"></div>
+         <div class="upper_footer_right"><p>GET YOUR APP TODAY</p> <img src="./Images/appstore_2x.37b1c082.png" alt=""></img> <img src="./Images/playstore_2x.98232a81.png" alt=""></div>
+      </div>
+      <div class="mid_footer">
+        <div class="list_div">
+        <section>
+          POPULAR CATEGORIES
+        <ul>
+          <li class="list">Cars</li>
+          <li class="list">Flats For rent</li>
+          <li class="list">Jobs</li>
+          <li class="list">Mobile Phones</li>
+      </ul>
+    </section>
+    <section>
+        TRENDING SEARCHES
+      <ul>
+        <li class="list"></li>
+        <li class="list">Bikes</li>
+        <li class="list">Watches</li>
+        <li class="list">Books</li>
+        <li class="list">Dogs</li>
+    </ul>
+  </section>
+  <section>
+      ABOUT US
+    <ul>
+      <li class="list"></li>
+      <li class="list">About OLX Group</li>
+      <li class="list">OLX blog</li>
+      <li class="list">Contact us</li>
+      <li class="list">OLX Business</li>
+  </ul>
+</section>
+<section>
+    OLX
+  <ul>
+    <li class="list">Help</li>
+    <li class="list">Site Map</li>
+    <li class="list">Legal and Privacy information</li>
+    <li class="list">OLX Business</li>
+</ul>
+</section>
+<section>
+  GET YOUR APP TODAY
+<div>
+  <img src="./Images/appstore.31148d33.png" alt="">
+  <img src="./Images/playstore.04d59769.png" alt="">
+</div>
+</section>
+</div>
+    </div>
+      <div class="lower_footer">
+        <div class="bottom_text">
+          <section><b>Other Countries</b> India - South Africa - Indonesia</section>
+          <section><b>Free Classifieds in Pakistan</b> . © 2006-2019 OLX</section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAUEPSrfTKzCaA_XVl54fk0no3oJoAH934",
+      authDomain: "signinauthentication-726ba.firebaseapp.com",
+      databaseURL: "https://signinauthentication-726ba.firebaseio.com",
+      projectId: "signinauthentication-726ba",
+      storageBucket: "signinauthentication-726ba.appspot.com",
+      messagingSenderId: "615877315331",
+      appId: "1:615877315331:web:6424b466d70cf434e97736"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAbk8PMPPx3nWCEfBRYp4FSK_307FyLOOA",
+        authDomain: "olxclonefinalproject.firebaseapp.com",
+        databaseURL: "https://olxclonefinalproject.firebaseio.com",
+        projectId: "olxclonefinalproject",
+        storageBucket: "olxclonefinalproject.appspot.com",
+        messagingSenderId: "891733074150",
+        appId: "1:891733074150:web:c55da38a606ff7fdb31b27"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+<script src="index.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</html>

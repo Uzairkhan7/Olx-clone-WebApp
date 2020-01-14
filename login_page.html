@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login_page.css">
+    
+</head>
+<body>
+   <div class="main">
+<div class="header"></div>
+<div class="body">
+    <div class="login_div">
+        <h1 id="chat">Login</h1>
+        <form action="">
+        <input id="lEmail" type="email" placeholder=" Email"  > <br>
+        <input id="lPass" type="password" placeholder="Password"  > <br>
+      </form>
+        <button class="cont" onclick="loginFunc()" >Sign in</button>
+        
+        <hr>
+
+        <h1>Sign up</h1>
+        <input id="sEmail" type="email" placeholder=" Email"  > <br>
+        <input id="sPass" type="password" placeholder="Password"  > <br>
+        <input id="Retype_Pass" type="password" placeholder="Re-type Password"  > <br>
+        <button class="cont" onclick="PasswordMatch()">Sign Up</button>
+        
+           
+    </div>
+</div>
+<div class="footer"></div>
+   </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<!-- <script src="/__/firebase/7.5.0/firebase-app.js"></script>
+<script src="/__/firebase/7.5.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.5.0/firebase-firestore.js"></script> -->
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAUEPSrfTKzCaA_XVl54fk0no3oJoAH934",
+    authDomain: "signinauthentication-726ba.firebaseapp.com",
+    databaseURL: "https://signinauthentication-726ba.firebaseio.com",
+    projectId: "signinauthentication-726ba",
+    storageBucket: "signinauthentication-726ba.appspot.com",
+    messagingSenderId: "615877315331",
+    appId: "1:615877315331:web:6424b466d70cf434e97736"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="login_page.js" ></script>
+</html>
