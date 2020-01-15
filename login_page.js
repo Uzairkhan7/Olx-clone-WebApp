@@ -53,6 +53,8 @@ function loginFunc() {
     .then(data => {
       console.log(data);
       alert("Sign in succesful with this Email: " + data.user.email);
+      window.location.href = "./index.html"
+
 
       var obj = {
         email: data.user.email,
@@ -61,7 +63,6 @@ function loginFunc() {
       var stringData = JSON.stringify(obj);
       localStorage.setItem("user", stringData);
 
-      window.location.href = "./olx.html"
 
     })
     .catch(function(error) {

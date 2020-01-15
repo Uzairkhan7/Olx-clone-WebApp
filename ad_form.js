@@ -83,7 +83,7 @@ saveAtFirestore = (data) =>{
     
     db.collection("ads").add(data).then((docRef)=>{
         alert("Ad Post Succesfully !");
-        window.location.href = "./olx.html"
+        window.location.href = "./index.html"
         console.log('Data sent to firestore:', docRef);
 
     }).catch((err)=>{
